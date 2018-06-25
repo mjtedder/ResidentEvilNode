@@ -1,4 +1,4 @@
-# Node-ZombieRPG
+# ResidentEvilNode
 A command-line zombie RPG built with node.js and inquire npm
 
 // INSTRUCTIONS: Build a command-line based zombie fighting game.
