@@ -14,7 +14,7 @@ console.log('======================================================')
 
 // function for calculating damage, randomg number between 1 and 5
 
-function rollDamage(){
+function rollDamage() {
 let attack = Math.floor(Math.random()* 5+1)
 let zombieAttack = Math.floor(Math.random() * 5+1)
 startGame(attack, zombieAttack)
@@ -30,8 +30,33 @@ function startGame(attack, zombieAttack) {
             choices: ['1','2','3','4','5']
            }
         ]
-    inquirer.prompt(questions)
-    }
+    inquirer.prompt(questions).then(function(response){
+        let playerGuess = response.damage
+
+        if (playerGuess == zombieAttack){
+            zombieHP = zombieHP - attack
+            console.log('Correct!  Leon dealt ' + attack + ' damage to Mr. X!')
+            console.log('====================================================')
+            console.log('Leon S. Kennedy HP: ' + playerHP + '\n' + 'Mr. X HP: ' + zombieHP)
+            console.log('====================================================')
+            rollDamage()
+        } else {
+            playerHP = playerHP - attack
+            console.log('Incorrect! Mr. X dealt ' + attack + ' damage to Leon!')
+            console.log('=====================================================')
+            console.log('Leon S. Kennedy HP: ' + playerHP + '\n' + 'Mr. X HP: ' + zombieHP)
+            console.log('=====================================================')
+            rollDamage()
+        }
+        if ((playerHP - attack) <= 0) {
+            console.log('Oh no! Leon is dead!')
+            console.log('=====================================================')
+        } else if ((zombieHP - attack) <=0) {
+            console.log('Mr. X is dead! You survived!')
+        }
+    })
+}
+startGame()
 
 
 
