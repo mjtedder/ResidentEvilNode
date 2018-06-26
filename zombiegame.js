@@ -2,15 +2,31 @@
 let fs = require('fs')
 let inquirer = require('inquirer')
 
-// set global variables
-let playerHP = Math.floor(Math.random()*(50-25))+15
-let zombieHP = Math.floor(Math.random()*(100-75))+20
+// set global variables & starting HP
+let minHP = 20
+let maxHP = 40
+let playerHP = Math.floor(Math.random()*(maxHP - minHP +1))+minHP
+let zombieHP = Math.floor(Math.random()*(maxHP - minHP +1))+minHP
 console.log('======================================================')
 console.log('***RESIDENT EVIL NODE***' + '\n')
 console.log('Leon S. Kennedy HP: ' + playerHP + '\n' + 'Mr. X HP: ' + zombieHP)
 console.log('======================================================')
 
-// function for start round - math for setting starting player HP and zombie HP
+// function for calculating damage
 
-//function for start battle - use inquirer
+function rollDamage(){
+let attack = Math.floor(Math.random()* 5+1)
+let zombieAttack = Math.floor(Math.random() * 5+1)
+startGame(attack, zombieAttack)
+}
+
+//function for start game - use inquirer
+//function startGame(attack, zombieAttack) {
+    //let questions = [
+
+    //]
+//}
+
+
+
 
