@@ -1,4 +1,4 @@
-# ResidentEvilNode
+# Resident Evil NODE
 A command-line zombie RPG built with node.js and inquire npm
 
 ## How To Play
