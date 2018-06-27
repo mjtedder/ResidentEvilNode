@@ -12,3 +12,7 @@ The game ends when Leon or Mr. X gets to 0 health.
 
 ## Installation
 
+* Clone the Repository
+* Open your terminal
+* Run command 'npm i'
+* Run 'node start' to begin the game
