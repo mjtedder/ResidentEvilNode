@@ -1,7 +1,7 @@
 # ResidentEvilNode
 A command-line zombie RPG built with node.js and inquire npm
 
-# How To Play
+## How To Play
 In this game, you are Leon S. Kenney and you will square off against Mr. X. Each will be given a certain amount of health.
 
 For each round, you will be asked to guess a random number between 1 and 5.
@@ -10,5 +10,5 @@ If your guess does not match the random number of the enemy -- they will inflict
 
 The game ends when Leon or Mr. X gets to 0 health.
 
-# Installation
+## Installation
 
