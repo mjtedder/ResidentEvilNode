@@ -19,7 +19,7 @@ Next, install the application dependencies:
 
 	* cd your/path/to/ResidentEvilNodeclone
 	* yarn install or npm install
-  * Run 'node start' to begin the game
+	* run 'node start' to begin the game
 
 ## How To Play
 
