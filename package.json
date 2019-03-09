@@ -4,6 +4,7 @@
   "description": "A CLI Game built with node.js and inquirer npm",
   "main": "zombiegame.js",
   "dependencies": {
+    "chalk": "^2.4.2",
     "fs": "^0.0.1-security",
     "inquirer": "^6.0.0"
   },
